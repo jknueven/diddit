@@ -1,8 +1,7 @@
 (function(){
 'use strict';
 
-angular
-.module('diddit', ['ui.router'])
+angular.module('diddit', ['ui.router'])
 .config(function($stateProvider, $urlRouterProvider){
 
 	$urlRouterProvider.otherwise("/");
@@ -50,4 +49,4 @@ angular
 
 });
 	
-}());
+})();
