@@ -1,0 +1,58 @@
+<DOCTYPE!html>
+<head ng-app="diddit">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+</head>
+<body>
+<div class="container-fluid">
+	
+	<header>
+		<div ui-view="nav"></div>
+	</header>
+
+	<main>
+		<div ui-view="main"></div>
+	</main>
+
+</div>
+
+<footer>
+	<div class="col-md-4 first"> 
+		<ul>
+			<li><h3>About</h3></li>
+			<li>aboutpage</li>
+			<li>blog</li>
+			<li>adverts</li>
+			<li>career</li>
+		</ul>
+	</div>
+
+	<div class="col-md-4 second"> 
+		<ul>
+			<li><h3>Site</h3></li>
+			<li>rules</li>
+			<li>wiki</li>
+			<li>FAQ</li>
+			<li>contact</li>
+		</ul>
+	</div>
+
+	<div class="col-md-4 third"> 
+		<img src="images/logo.svg">
+		<p>1234 Ohio Ave</p>
+		<p>Cincinnati, OH 45040</p>
+		<p>P.O box 11223344</p>
+	</div>	
+
+</footer>
+<script src="js/mainView.js"></script>
+<script src="js/factories/mainFactory.js"></script>
+<script src="js/controllers/homeController.js"></script>
+<script src="js/controllers/postController.js"></script>
+<script src="js/controllers/commentController.js"></scrip
+</body>
+
+</html>
