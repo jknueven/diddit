@@ -2,10 +2,9 @@
 'use strict';
 
 angular.module('diddit', ['ui.router'])
-.config(function($stateProvider, $urlRouterProvider){
+.config(function($stateProvider, $urlRouterProvider, $locationProvider){
 
 	$urlRouterProvider.otherwise("/");
-
 	$stateProvider
 	.state('home', {
 		url: '/',

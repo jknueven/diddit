@@ -22,6 +22,67 @@
     margin-top: 35px;
     margin-right: 30px; }
 
+.post {
+  width: 100%;
+  height: 100px;
+  margin-top: 30px;
+  background-color: #e61232; }
+  .post .position {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 30px;
+    color: white; }
+    .post .position h3 {
+      font-family: "Ubuntu", sans-serif;
+      font-size: 30px;
+      text-align: center; }
+  .post .vote {
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-left: -30px;
+    margin-top: 10px; }
+    .post .vote h3 {
+      margin: auto;
+      font-size: 30px;
+      color: white; }
+    .post .vote i {
+      margin: auto; }
+  .post .postContent ul {
+    list-style: none;
+    margin-left: -50px; }
+    .post .postContent ul li {
+      color: black; }
+      .post .postContent ul li h2 {
+        margin: auto; }
+      .post .postContent ul li a {
+        color: white;
+        margin-left: 5px; }
+      .post .postContent ul li i {
+        color: white;
+        font-size: 20px; }
+      .post .postContent ul li p {
+        margin: auto;
+        font-style: italic;
+        display: inline-block; }
+
+.postPost {
+  margin-top: 30px; }
+  .postPost form input {
+    display: block;
+    margin-top: 20px;
+    margin-left: 195px; }
+  .postPost form textarea {
+    margin-top: 20px;
+    margin-left: 195px;
+    height: 100px;
+    width: 300px; }
+  .postPost form button {
+    display: block;
+    margin-left: 195px;
+    margin-top: 5px; }
+
 footer {
   display: block;
   margin: auto;

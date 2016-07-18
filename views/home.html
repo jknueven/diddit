@@ -1,6 +1,26 @@
-<div class="row home">
+<div class="home">
 
-<div class="allContent" ng-repeat="posts in home.data">
+<div class="row post">
+<div class="col-md-1 position">
+	<h3>1</h3>
 </div>
+  <div class="col-md-1 vote">
+	<i class="fa fa-arrow-up" aria-hidden="true"></i>
+	<h3>794</h3>
+	<i class="fa fa-arrow-down" aria-hidden="true"></i>
+  </div>
+  <div class="col-md-9 postContent">
+  	<ul>
+		<li class="topPost"><h2>Testing a Title...</h2><p>(www.reddit.com)</p></li>
+		<li><p>submitted 1 hour ago by Jared</p></li>
+		<li><i class="fa fa-comments" aria-hidden="true"></i><a ui-sref="comment_id"><p>(100) comments</p></a></li>
+		</ul>
+  </div>
+
+
+</div>
+
+<!--<div class="allContent" ng-repeat="posts in home.data">
+</div>-->
 
 </div>
