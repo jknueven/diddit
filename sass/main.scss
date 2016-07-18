@@ -1,0 +1,45 @@
+$primaryColor:#B70E28;
+
+
+
+footer{
+	display:block;
+	margin:auto;
+	.foot{
+		display:block;
+		margin:auto;
+	}
+	.footBlock {
+		display: block;
+		margin:auto;
+	}
+	ul{
+		list-style: none;
+		padding: 0;
+		
+		li{
+			text-align: center;
+			h3 {
+				color:$primaryColor;
+			}
+		}
+	}
+	.first, .second, .third{
+		border:1px solid $primaryColor;
+		height: 160px;
+		display: block;
+		margin:auto;
+	}
+	.third{
+		p{
+			text-align: center;
+		}
+		img{
+			height:70px;
+			display: block;
+			margin:auto;
+			padding-top:15px;
+			margin-bottom: 0;
+		}
+	}
+}

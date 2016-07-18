@@ -1,11 +1,11 @@
 (function(){
-'use strict'
+'use strict';
 
 angular
 .module('diddit', ['ui.router'])
 .config(function($stateProvider, $urlRouterProvider){
 
-	$urlRouterProvider.otherwise("/#");
+	$urlRouterProvider.otherwise("/");
 
 	$stateProvider
 	.state('home', {

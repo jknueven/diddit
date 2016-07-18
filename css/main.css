@@ -1,0 +1,29 @@
+footer {
+  display: block;
+  margin: auto; }
+  footer .foot {
+    display: block;
+    margin: auto; }
+  footer .footBlock {
+    display: block;
+    margin: auto; }
+  footer ul {
+    list-style: none;
+    padding: 0; }
+    footer ul li {
+      text-align: center; }
+      footer ul li h3 {
+        color: #B70E28; }
+  footer .first, footer .second, footer .third {
+    border: 1px solid #B70E28;
+    height: 160px;
+    display: block;
+    margin: auto; }
+  footer .third p {
+    text-align: center; }
+  footer .third img {
+    height: 70px;
+    display: block;
+    margin: auto;
+    padding-top: 15px;
+    margin-bottom: 0; }
