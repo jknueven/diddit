@@ -23,10 +23,10 @@
     margin-right: 30px; }
 
 .post {
-  width: 100%;
+  width: 70%;
   height: 100px;
   margin-top: 30px;
-  margin-left: 0px;
+  margin-left: 165px;
   background-color: #e61232; }
   .post .position {
     display: block;
@@ -37,7 +37,8 @@
     .post .position h3 {
       font-family: "Ubuntu", sans-serif;
       font-size: 30px;
-      text-align: center; }
+      text-align: center;
+      margin-left: -40px; }
   .post .vote {
     display: block;
     margin: auto;
@@ -53,14 +54,16 @@
       .post .vote i :hover {
         color: white; }
   .post .postContent {
-    margin-top: 10px; }
+    margin-top: 5px; }
     .post .postContent ul {
       list-style: none;
       margin-left: -50px; }
       .post .postContent ul li {
         color: black; }
         .post .postContent ul li h2 {
-          margin: auto; }
+          margin: auto;
+          margin-top: -12px;
+          color: white; }
         .post .postContent ul li a {
           color: white;
           margin-left: 5px; }
@@ -94,7 +97,8 @@ footer {
   margin-top: 40px; }
   footer .foot {
     display: block;
-    margin: auto; }
+    margin: auto;
+    margin-left: 32%; }
   footer .footBlock {
     display: block;
     margin: auto; }
@@ -111,6 +115,8 @@ footer {
     height: 160px;
     display: block;
     margin: auto; }
+  footer .third ul li {
+    font-size: 12px; }
   footer .third p {
     text-align: center; }
   footer .third img {

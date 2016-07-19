@@ -11,9 +11,15 @@
   </div>
   <div class="col-md-9 postContent">
   	<ul>
-		<li class="topPost"><h2>{{posts.title}}</h2><p>{{posts.url}}</p></li>
-		<li><i class="fa fa-comments" aria-hidden="true"></i><a ui-sref="comment_id"><p>(0) comments</p></a></li>
-		</ul>
+		<li class="topPost">
+			<a ui-sref="comment.id"><h2>{{posts.title}}</h2></a>
+			<p>{{posts.url}}</p>
+		</li>
+		<li>
+			<i class="fa fa-comments" aria-hidden="true"></i>
+			<p>(0) <a ng-href="#/comment/{{posts.id}}">comments</p></a>
+		</li>
+	</ul>
   </div>
 </div>
 </div>

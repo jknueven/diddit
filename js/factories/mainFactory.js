@@ -27,14 +27,23 @@
 		 		return going;
 		 	}
 
+		 	function postComment(data)
+		 	{
+		 		data.likes=0;
+		 		var comment = $http ({
+  					method: 'POST',
+  					data: data,
+  					url: 'https://api.backand.com:443/1/objects/comment',
+  					
+		 		});
+		 		return comment;
+		 	}
+
 		 	function getAPost(id)
 		 	{
 		 		var single = $http({
 		 			method: 'GET',
-		 			url: ''+id,
-		 			header: {
-		 				X_CSRF_TOKEN : "jared",
-		 			}
+		 			url: 'https://api.backand.com:443/1/objects/posts/'+ id + '?deep=true',
 		 		});
 		 		return single;
 		 	}
@@ -57,6 +66,7 @@
 		 		postPost:postPost,
 		 		getAPost:getAPost,
 		 		postLikes:postLikes,
+		 		postComment:postComment,
 		 	}
 	});
 })();

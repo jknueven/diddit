@@ -50,7 +50,7 @@ angular.module('diddit', ['ui.router', 'backand'])
 		},
 	})
 	.state('comment', {
-		url: '/comment',
+		url: '/comment/:commentid',
 		views: {
 			'main': {
 				templateUrl: '../views/comment.html',

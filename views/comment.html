@@ -1,0 +1,46 @@
+<div class="comment">
+
+<div class="row post">
+  <div class="col-md-1 vote">
+	<i class="fa fa-arrow-up" aria-hidden="true" ng-click="comment.postUpLikes(posts)" ng-init="count=0"></i>
+	<h3>{{post.likes | number}}</h3>
+	<i class="fa fa-arrow-down" aria-hidden="true" ng-click="comment.postDownLikes(posts)" ng-init="count=0"></i>
+  </div>
+  <div class="col-md-9 postContent">
+  	<ul>
+		<li class="topPost">
+			<a ui-sref="comment.id"><h2>{{post.title}}</h2></a>
+			<p>{{post.url}}</p>
+		</li>
+		<li>
+			<p>{{post.description}}</p>
+		</li>
+	</ul>
+  </div>
+</div>
+
+<div class="row commentForm">
+	<form ng-submit="comment.submit()">
+		<div class="ng-hide">{{post.id}}</div>
+		<input type="text" name="title" ng-model="comment.form.title">
+		<input type="text" name="content" ng-model="comment.form.content">
+		<input type="submit" class="btn btn-danger">
+	</form>
+
+</div>
+
+<div class="row commentsSection" ng-repeat="comments in comment.data.comments">
+
+	<div class="col-md-1 vote">
+		<i class="fa fa-arrow-up" aria-hidden="true" ng-click="comment.postUpLikes(comment)" ng-init=	"count=0"></i>
+		<h3>{{comments.likes | number}}</h3>
+		<i class="fa fa-arrow-down" aria-hidden="true" ng-click="comment.postDownLikes(comment)" ng-init="count=0"></i>
+    </div>
+
+	<div class="col-md-10 comContent">
+	<p>{{comments.content}}</p>
+	</div>
+
+</div>
+
+</div>
