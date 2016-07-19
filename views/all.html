@@ -1,6 +1,6 @@
 <div class="home">
 
-<div class="row post" ng-repeat="posts in home.data">
+<div class="row post" ng-repeat="posts in home.data | orderBy:'-likes'">
 <div class="col-md-1 position">
 	<h3>{{posts.id}}</h3>
 </div>

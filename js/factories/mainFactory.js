@@ -17,6 +17,7 @@
 
 		 	function postPost(data)
 		 	{
+		 		data.likes=0;
 		 		var going = $http ({
   					method: 'POST',
   					data: data,
@@ -38,10 +39,24 @@
 		 		return single;
 		 	}
 
+		 	function postLikes(id, likes){
+		 		var data = {
+		 			likes: likes,
+		 		}
+		 		var like = $http ({
+		 			method: 'PUT',
+		 			data: data,
+		 			url: 'https://api.backand.com:443/1/objects/posts/' +id,
+		 		});
+		 		return like;
+		 	}
+
+
 		 	return {
 		 		getPosts:getPosts,
 		 		postPost:postPost,
 		 		getAPost:getAPost,
+		 		postLikes:postLikes,
 		 	}
 	});
 })();

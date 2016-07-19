@@ -6,8 +6,7 @@ angular.module("diddit").controller("postController", function(API) {
 
 	vm.submit = function(){
 		var postImage = API.postPost(vm.form);
-		alert("test");
-
+		
 		 postImage.then(function(response){
 		 	
 		 	vm.form = "";

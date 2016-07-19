@@ -23,6 +23,32 @@ angular.module('diddit', ['ui.router', 'backand'])
 			},
 		},
 	})
+	.state('all', {
+		url: '/all',
+		views: {
+			'main': {
+				templateUrl: '../views/all.html',
+				controller: 'homeController',
+				controllerAs: 'home',
+			},
+			'nav': {
+				templateUrl:'../views/partials/nav.html',
+			},
+		},
+	})
+	.state('new', {
+		url: '/new',
+		views: {
+			'main': {
+				templateUrl: '../views/new.html',
+				controller: 'homeController',
+				controllerAs: 'home',
+			},
+			'nav': {
+				templateUrl:'../views/partials/nav.html',
+			},
+		},
+	})
 	.state('comment', {
 		url: '/comment',
 		views: {
