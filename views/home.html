@@ -1,26 +1,19 @@
 <div class="home">
 
-<div class="row post">
+<div class="row post" ng-repeat="posts in home.data">
 <div class="col-md-1 position">
-	<h3>1</h3>
+	<h3>{{posts.id}}</h3>
 </div>
   <div class="col-md-1 vote">
-	<i class="fa fa-arrow-up" aria-hidden="true"></i>
-	<h3>794</h3>
-	<i class="fa fa-arrow-down" aria-hidden="true"></i>
+	<i class="fa fa-arrow-up" aria-hidden="true" ng-click="home.postLikes(posts)" ng-init="count=0"></i>
+	<h3>{{posts.likes | number}}</h3>
+	<i class="fa fa-arrow-down" aria-hidden="true" ng-click="home.postLikes(posts)" ng-init="count=0"></i>
   </div>
   <div class="col-md-9 postContent">
   	<ul>
-		<li class="topPost"><h2>Testing a Title...</h2><p>(www.reddit.com)</p></li>
-		<li><p>submitted 1 hour ago by Jared</p></li>
-		<li><i class="fa fa-comments" aria-hidden="true"></i><a ui-sref="comment_id"><p>(100) comments</p></a></li>
+		<li class="topPost"><h2>{{posts.title}}</h2><p>{{posts.url}}</p></li>
+		<li><i class="fa fa-comments" aria-hidden="true"></i><a ui-sref="comment_id"><p>(0) comments</p></a></li>
 		</ul>
   </div>
-
-
 </div>
-
-<!--<div class="allContent" ng-repeat="posts in home.data">
-</div>-->
-
 </div>

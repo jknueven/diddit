@@ -1,67 +1,47 @@
 (function () {
 	'use strict';
 	angular
-		.module('imgHost')
-		 .factory('API', function($http) {
+		.module('diddit').factory('API', function($http) {
 
 
-		 	function getImages(image)
+		 	function getPosts(post)
 		 	{
 		 		var call = $http({
 		          method: 'GET',
-		          url: `http://instagramcloneclass.herokuapp.com/images`,
-		          headers: {
-		          	"X_CSRF_TOKEN" : "jared",
-		          }
+		          url: `https://api.backand.com:443/1/objects/posts`,
+		         
 		        });	
 		        return call;
 
 		 	}
 
-		 	function postImage(data)
+		 	function postPost(data)
 		 	{
-		 		var going = $http({
-		 			method: 'POST',
-		 			data: data,
-		 			headers: {
-		 				"X_CSRF_TOKEN" : "jared",
-		 			},
-		 			url: `http://instagramcloneclass.herokuapp.com/image/post`,
+		 		var going = $http ({
+  					method: 'POST',
+  					data: data,
+  					url: 'https://api.backand.com:443/1/objects/posts',
+  					
 		 		});
 		 		return going;
 		 	}
 
-		 	function postLikes(id)
+		 	function getAPost(id)
 		 	{
-		 		var data = {
-		 			imageid: id,
-		 		}
-		 		var liked = $http({
-		 			method: "POST",
-		 			data: data,
-		 			headers: {
-		 				"X_CSRF_TOKEN" : "jared",
-		 			},
-		 			url: 'http://instagramcloneclass.herokuapp.com/images/vote',
-		 		});
-		 		return liked;
-		 	}
-
-		 	function getAnImage(id)
-		 	{
-		 		var call = $http({
+		 		var single = $http({
 		 			method: 'GET',
-		 			url: 'http://instagramcloneclass.herokuapp.com/images/'+id,
+		 			url: ''+id,
 		 			header: {
 		 				X_CSRF_TOKEN : "jared",
 		 			}
 		 		});
-		 		return call;
+		 		return single;
 		 	}
 
 		 	return {
-		 		
+		 		getPosts:getPosts,
 		 		postPost:postPost,
+		 		getAPost:getAPost,
 		 	}
 	});
 })();

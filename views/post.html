@@ -1,15 +1,15 @@
 <div class="row postPost">
 
-<form ng-submit="controller.submit()">
-	<input type="text" placeholder="Title" ng-model="controller.form.title">
+<form ng-submit="post.submit()">
+	<input type="text" placeholder="Title" ng-model="post.form.title">
 
-	<input type="text" name="url" placeholder="URL" ng-model="controller.form.url">
+	<input type="text" name="url" placeholder="URL" ng-model="post.form.url">
 
-	<textarea class="contentArea" type="textarea" name="content"></textarea>
+	<textarea class="contentArea" type="textarea" name="content" ng-model="post.form.content"></textarea>
 
 	
 
-	<input type="submit" class="btn btn-primary" placeholder="Submit">
+	<input type="submit" class="btn btn-primary">
 </form>
 
 </div>

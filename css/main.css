@@ -9,7 +9,7 @@
       padding-left: 20px;
       margin-top: 0px; }
       .nav ul li img {
-        height: 120px;
+        height: 100px;
         display: inline-block; }
       .nav ul li a {
         color: white;
@@ -26,6 +26,7 @@
   width: 100%;
   height: 100px;
   margin-top: 30px;
+  margin-left: 0px;
   background-color: #e61232; }
   .post .position {
     display: block;
@@ -49,23 +50,27 @@
       color: white; }
     .post .vote i {
       margin: auto; }
-  .post .postContent ul {
-    list-style: none;
-    margin-left: -50px; }
-    .post .postContent ul li {
-      color: black; }
-      .post .postContent ul li h2 {
-        margin: auto; }
-      .post .postContent ul li a {
-        color: white;
-        margin-left: 5px; }
-      .post .postContent ul li i {
-        color: white;
-        font-size: 20px; }
-      .post .postContent ul li p {
-        margin: auto;
-        font-style: italic;
-        display: inline-block; }
+      .post .vote i :hover {
+        color: white; }
+  .post .postContent {
+    margin-top: 10px; }
+    .post .postContent ul {
+      list-style: none;
+      margin-left: -50px; }
+      .post .postContent ul li {
+        color: black; }
+        .post .postContent ul li h2 {
+          margin: auto; }
+        .post .postContent ul li a {
+          color: white;
+          margin-left: 5px; }
+        .post .postContent ul li i {
+          color: white;
+          font-size: 20px; }
+        .post .postContent ul li p {
+          margin: auto;
+          font-style: italic;
+          display: inline-block; }
 
 .postPost {
   margin-top: 30px; }

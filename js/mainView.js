@@ -1,8 +1,12 @@
 (function(){
 'use strict';
 
-angular.module('diddit', ['ui.router'])
-.config(function($stateProvider, $urlRouterProvider, $locationProvider){
+angular.module('diddit', ['ui.router', 'backand'])
+.config(function($stateProvider, $urlRouterProvider, $locationProvider, BackandProvider){
+
+	BackandProvider.setAppName('diddit');
+    BackandProvider.setSignUpToken('a0756801-0937-4418-aa8e-28d276c06112');
+    BackandProvider.setAnonymousToken('22f12152-609f-47cd-80d4-a86231782c2f');
 
 	$urlRouterProvider.otherwise("/");
 	$stateProvider
