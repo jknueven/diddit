@@ -174,3 +174,23 @@ footer{
 		}
 	}
 }
+
+.commentForm {
+	form{
+		margin-left: 180px;
+		margin-top: 30px;
+		.btn-danger{
+				background-color:$primaryColor;
+			}
+		input{
+			display: block;
+			margin-top: 10px;
+
+		}
+		textarea{
+			margin-top: 10px;
+			height:150px;
+			width:450px;
+		}
+	}
+}

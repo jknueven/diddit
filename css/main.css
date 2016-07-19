@@ -125,3 +125,16 @@ footer {
     margin: auto;
     padding-top: 15px;
     margin-bottom: 0; }
+
+.commentForm form {
+  margin-left: 180px;
+  margin-top: 30px; }
+  .commentForm form .btn-danger {
+    background-color: #B70E28; }
+  .commentForm form input {
+    display: block;
+    margin-top: 10px; }
+  .commentForm form textarea {
+    margin-top: 10px;
+    height: 150px;
+    width: 450px; }

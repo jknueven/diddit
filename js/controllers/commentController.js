@@ -10,8 +10,9 @@ angular.module("diddit").controller("commentController", function(API, $statePar
 
 
 	 data.then(function(post){
+	 	
+	 	vm.data = post.data;
 	 	console.log(post);
-	 	vm.data = post.data.data;
 
 	 });
 
