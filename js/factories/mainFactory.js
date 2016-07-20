@@ -39,6 +39,15 @@
 		 		return comment;
 		 	}
 
+		 	function getComments(comment)
+		 	{
+		 		var call = $http({
+		 			method: 'GET',
+		 			url: 'https://api.backand.com:443/1/objects/comment',
+		 		});
+		 		return call;
+		 	}
+
 		 	function getAPost(id)
 		 	{
 		 		var single = $http({
@@ -67,6 +76,7 @@
 		 		getAPost:getAPost,
 		 		postLikes:postLikes,
 		 		postComment:postComment,
+		 		getComments:getComments,
 		 	}
 	});
 })();

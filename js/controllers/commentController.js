@@ -12,7 +12,13 @@ angular.module("diddit").controller("commentController", function(API, $statePar
 	 data.then(function(post){
 	 	
 	 	vm.data = post.data;
-	 	console.log(post);
+
+	 });
+
+	 var comments = API.getComments();
+
+	 comments.then(function(comments){
+	 	console.log(comments);
 
 	 });
 

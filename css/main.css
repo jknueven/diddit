@@ -126,6 +126,12 @@ footer {
     padding-top: 15px;
     margin-bottom: 0; }
 
+.comment .post .vote, .comment .post .content {
+  margin-left: 20px; }
+
+.comment .post .content {
+  height: auto; }
+
 .commentForm form {
   margin-left: 180px;
   margin-top: 30px; }
@@ -133,8 +139,10 @@ footer {
     background-color: #B70E28; }
   .commentForm form input {
     display: block;
-    margin-top: 10px; }
+    margin-top: 10px;
+    border: 1px solid #B70E28; }
   .commentForm form textarea {
     margin-top: 10px;
     height: 150px;
-    width: 450px; }
+    width: 450px;
+    border: 1px solid #B70E28; }

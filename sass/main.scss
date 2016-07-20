@@ -175,6 +175,15 @@ footer{
 	}
 }
 
+.comment .post {
+	.vote, .content{
+		margin-left: 20px;
+	}
+	.content{
+		height:auto;
+	}
+}
+
 .commentForm {
 	form{
 		margin-left: 180px;
@@ -185,12 +194,13 @@ footer{
 		input{
 			display: block;
 			margin-top: 10px;
-
+			border:1px solid $primaryColor;
 		}
 		textarea{
 			margin-top: 10px;
 			height:150px;
 			width:450px;
+			border:1px solid $primaryColor;
 		}
 	}
 }
