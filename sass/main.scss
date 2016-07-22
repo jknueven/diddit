@@ -204,3 +204,26 @@ footer{
 		}
 	}
 }
+
+.commentsSection{
+	background-color:$primaryColor;
+	margin-top:25px;
+
+	.vote{
+		h3{
+			color:white;
+			margin-left: 40px;
+			margin-top:10px;
+		}
+		i{
+			margin-left: 40px;
+		}
+	}
+
+	.comComment {
+		h3{
+			color:white;
+		}
+	}
+
+}

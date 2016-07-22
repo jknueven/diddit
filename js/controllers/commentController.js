@@ -15,12 +15,6 @@ angular.module("diddit").controller("commentController", function(API, $statePar
 
 	 });
 
-	 var comments = API.getComments();
-
-	 comments.then(function(comments){
-	 	console.log(comments);
-
-	 });
 
 	 vm.submit = function(){
 		var postComment = API.postComment(vm.form);

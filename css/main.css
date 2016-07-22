@@ -146,3 +146,15 @@ footer {
     height: 150px;
     width: 450px;
     border: 1px solid #B70E28; }
+
+.commentsSection {
+  background-color: #B70E28;
+  margin-top: 25px; }
+  .commentsSection .vote h3 {
+    color: white;
+    margin-left: 40px;
+    margin-top: 10px; }
+  .commentsSection .vote i {
+    margin-left: 40px; }
+  .commentsSection .comComment h3 {
+    color: white; }

@@ -12,7 +12,7 @@
   	<ul>
 		<li class="topPost">
 			<a ui-sref="comment.id"><h2>{{comment.data.title}}</h2></a>
-			<p><a href="{{comment.data.url}}"</p>
+			<p><a href="{{comment.data.url}}" target="_blank">{{comment.data.url}}</a></p>
 		</li>
 		<li>
 			<p>{{comment.data.content}}</p>
@@ -31,16 +31,17 @@
 
 </div>
 
-<div class="row commentsSection" ng-repeat="comments in comments.data.data">
+<div class="row commentsSection" ng-repeat="comment in comment.data.comments">
 
 	<div class="col-md-1 vote">
 		<i class="fa fa-arrow-up" aria-hidden="true" ng-click="comment.postUpLikes(comment)" ng-init=	"count=0"></i>
-		<h3>{{comments.data.likes | number}}</h3>
+		<h3>{{comment.likes | number}}</h3>
 		<i class="fa fa-arrow-down" aria-hidden="true" ng-click="comment.postDownLikes(comment)" ng-init="count=0"></i>
     </div>
 
 	<div class="col-md-10 comContent">
-	<p>{{comments.data.content}}</p>
+	<h3>{{comment.title}}</h3>
+	<p>{{comment.content}}</p>
 	</div>
 
 </div>
