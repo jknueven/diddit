@@ -33,9 +33,9 @@
 <div class="row commentsSection" ng-repeat="comment in comment.data.comments | orderBy:'-likes'">
 
 	<div class="col-md-1 vote">
-		<i class="fa fa-arrow-up" aria-hidden="true" ng-click="comment.postUpLikes(comment)" ng-init=	"count=0"></i>
+		<i class="fa fa-arrow-up" aria-hidden="true" ng-click="comment.postUpLikes(comments)" ng-init=	"count=0"></i>
 		<h3>{{comment.likes | number}}</h3>
-		<i class="fa fa-arrow-down" aria-hidden="true" ng-click="comment.postDownLikes(comment)" ng-init="count=0"></i>
+		<i class="fa fa-arrow-down" aria-hidden="true" ng-click="comment.postDownLikes(comments)" ng-init="count=0"></i>
     </div>
 
 	<div class="col-md-10 comContent">

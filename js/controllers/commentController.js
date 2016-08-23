@@ -30,4 +30,22 @@ angular.module("diddit").controller("commentController", function(API, $statePar
 
 		}
 
+	vm.postUpLikes= function(posts){
+		var likeUp = API.postLikes(comment.id, comment.likes + 1);
+		
+		likeUp.then(function(response){
+		//console.log(response);
+		posts.likes ++;
+		});
+	}
+
+	vm.postDownLikes = function(posts){
+		var likeDown = API.postLikes(comment.id, comment.likes - 1);
+		
+		likeDown.then(function(response){
+		//console.log(response);
+		posts.likes --;
+		});
+	}
+
 });
